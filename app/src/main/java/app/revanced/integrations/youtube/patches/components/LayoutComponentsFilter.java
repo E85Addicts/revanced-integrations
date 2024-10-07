@@ -2,6 +2,7 @@ package app.revanced.integrations.youtube.patches.components;
 
 import static app.revanced.integrations.youtube.shared.NavigationBar.NavigationButton;
 
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.view.View;
 
@@ -380,6 +381,21 @@ public final class LayoutComponentsFilter extends Filter {
         return !Settings.HIDE_VIDEO_CHANNEL_WATERMARK.get();
     }
 
+
+    private static final boolean HIDE_DOODLES_ENABLED = Settings.HIDE_DOODLES.get();
+
+    /**
+     * Injection point.
+     */
+    @Nullable
+    public static Drawable hideYoodles(Drawable animatedYoodle) {
+        if (HIDE_DOODLES_ENABLED) {
+            return null;
+        }
+
+        return animatedYoodle;
+    }
+
     private static final boolean HIDE_SHOW_MORE_BUTTON_ENABLED = Settings.HIDE_SHOW_MORE_BUTTON.get();
 
     /**
@@ -406,7 +422,6 @@ public final class LayoutComponentsFilter extends Filter {
         // Check navigation button last.
         // Only filter if the library tab is not selected.
         // This check is important as the shelf layout is used for the library tab playlists.
-        NavigationButton selectedNavButton = NavigationButton.getSelectedNavigationButton();
-        return selectedNavButton != null && !selectedNavButton.isLibraryOrYouTab();
+        return NavigationButton.getSelectedNavigationButton() != NavigationButton.LIBRARY;
     }
 }
