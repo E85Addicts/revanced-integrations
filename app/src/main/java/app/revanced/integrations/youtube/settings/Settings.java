@@ -131,7 +131,7 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting DISABLE_LIKE_SUBSCRIBE_GLOW = new BooleanSetting("revanced_disable_like_subscribe_glow", FALSE);
     public static final BooleanSetting HIDE_AUTOPLAY_BUTTON = new BooleanSetting("revanced_hide_autoplay_button", TRUE, true);
     public static final BooleanSetting HIDE_CAST_BUTTON = new BooleanSetting("revanced_hide_cast_button", TRUE, true);
-    public static final BooleanSetting HIDE_PLAYER_BUTTONS = new BooleanSetting("revanced_hide_player_buttons", FALSE);
+    public static final BooleanSetting HIDE_PLAYER_BUTTONS = new BooleanSetting("revanced_hide_player_buttons", FALSE, true);
     public static final BooleanSetting COPY_VIDEO_URL = new BooleanSetting("revanced_copy_video_url", FALSE);
     public static final BooleanSetting COPY_VIDEO_URL_TIMESTAMP = new BooleanSetting("revanced_copy_video_url_timestamp", TRUE);
     public static final BooleanSetting PLAYBACK_SPEED_DIALOG_BUTTON = new BooleanSetting("revanced_playback_speed_dialog_button", FALSE);
@@ -144,6 +144,7 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting MINIPLAYER_HIDE_EXPAND_CLOSE = new BooleanSetting("revanced_miniplayer_hide_expand_close", FALSE, true, new MiniplayerHideExpandCloseAvailability());
     public static final BooleanSetting MINIPLAYER_HIDE_SUBTEXT = new BooleanSetting("revanced_miniplayer_hide_subtext", FALSE, true, MINIPLAYER_TYPE.availability(MODERN_1, MODERN_3));
     public static final BooleanSetting MINIPLAYER_HIDE_REWIND_FORWARD = new BooleanSetting("revanced_miniplayer_hide_rewind_forward", FALSE, true, MINIPLAYER_TYPE.availability(MODERN_1));
+    public static final BooleanSetting MINIPLAYER_ROUNDED_CORNERS = new BooleanSetting("revanced_miniplayer_rounded_corners", TRUE, true, MINIPLAYER_ANY_MODERN);
     public static final IntegerSetting MINIPLAYER_WIDTH_DIP = new IntegerSetting("revanced_miniplayer_width_dip", 192, true, MINIPLAYER_ANY_MODERN);
     public static final IntegerSetting MINIPLAYER_OPACITY = new IntegerSetting("revanced_miniplayer_opacity", 100, true, MINIPLAYER_TYPE.availability(MODERN_1));
 
