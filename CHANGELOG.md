@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/E85Addicts/revanced-integrations/compare/v1.16.0...v1.17.0) (2024-10-16)
+
+
+### Features
+
+* **YouTube:** Support versions 19.25 and 19.34 ([4d00232](https://github.com/E85Addicts/revanced-integrations/commit/4d002320fc86dabc0efad0207b48478174da0c2a))
+
 # [1.16.0](https://github.com/E85Addicts/revanced-integrations/compare/v1.15.0...v1.16.0) (2024-10-07)
 
 
