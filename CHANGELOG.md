@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/E85Addicts/revanced-integrations/compare/v1.17.0...v1.18.0) (2024-10-17)
+
+
+### Features
+
+* **Instagram:** Added few patches ([566e35c](https://github.com/E85Addicts/revanced-integrations/commit/566e35c066b5473a76fd8fd90a806f6f47f7774c))
+
 # [1.17.0](https://github.com/E85Addicts/revanced-integrations/compare/v1.16.0...v1.17.0) (2024-10-16)
 
 
